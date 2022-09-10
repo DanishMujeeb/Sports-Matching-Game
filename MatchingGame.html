@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sports Matching Game</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Links to an external styles sheet -->
+        <link rel="icon" type="image/jpg" href="images/sports.jpg"> <!-- Makes a sports image as the icon for the webpage-->
+        <script
+	  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	  crossorigin="anonymous"></script> <!-- Allows us to use jquery -->
+		<script type="text/javascript" src="Game.js"></script> <!-- Links to an external java script file -->
+    </head>
+    <body> 
+        <center> <!-- The center tag centers all the elements inside of it -->
+            <h1>Sports Matching Game</h1>
+        </center>
+        <hr>
+        <div> <!-- The div tag creates a container containing all of the images -->
+            <!-- The img tags create images and put them on the screen -->
+            <img src="images/card.png" id="img1">
+            <img src="images/card.png" id="img2" class="img2">
+            <img src="images/card.png" id="img3" class="img3">
+            <img src="images/card.png" id="img4" class="img4">
+            <img src="images/card.png" id="img5" class="img5">
+            <img src="images/card.png" id="img6" class="img6">
+            <img src="images/card.png" id="img7" class="img7">
+            <img src="images/card.png" id="img8" class="img8">
+            <img src="images/card.png" id="img9" class="img9">
+            <img src="images/card.png" id="img10" class="img10">
+            <img src="images/card.png" id="img11" class="img11">
+            <img src="images/card.png" id="img12" class="img12">
+            <!-- The label and span tag display the timer for 20 seconds -->
+            <label >Time:</label>
+            <span id="theTarget">20</span>
+        </div>
+        <!-- This div tag contains an h2, a p tag and a button, which is styled with CSS to display a 
+        message when a user finds all the matches -->
+        <div class="popup" id="popup"> 
+            <h2>Congratulations!</h2>
+            <p>You found all the matches. Press the button below to play again.</p>
+            <button id="btnPlayAgain">Play Again</button>
+        </div>
+        <!-- This div tag contains an h2, a p tag and a button, which is styled with CSS to display a 
+        message when a user doesn't find all the matches -->
+        <div class="popup" id="popup2">
+            <h2>You Lose!</h2>
+            <p>Unfortunately you weren't able to find all of the matches. Press the button below to play again.</p>
+            <button id="btnPlayAgain2">Play Again</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+/* The CSS for the body gives it a background image that doesn't repeat */
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 2500px;
+}
+
+/* The CSS for the div tag gives it a specific height and width, it centers it and gives it a black border */
+div{
+    height: 400px;
+    width: 800px;
+    border-style: solid;
+    border-color: black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* The CSS for the images make all the positions absolute nas give each image a specific location */
+img{
+    position: absolute;
+    height: 120px;
+    width: 85px;
+    left: 370px;
+    top: 140px;
+}
+
+.img2{
+    position: absolute;
+    left: 460px;
+}
+
+.img3{
+    position: absolute;
+    left: 550px;
+}
+
+.img4{
+    position: absolute;
+    left: 640px;
+}
+
+.img5{
+    position: absolute;
+    left: 730px;
+}
+
+.img6{
+    position: absolute;
+    left: 820px;
+}
+
+.img7{
+    position: absolute;
+    left: 370px;
+    top: 270px;
+}
+
+.img8{
+    position: absolute;
+    left: 460px;
+    top: 270px;
+}
+
+.img9{
+    position: absolute;
+    left: 550px;
+    top: 270px;
+}
+
+.img10{
+    position: absolute;
+    left: 640px;
+    top: 270px;
+}
+
+.img11{
+    position: absolute;
+    left: 730px;
+    top: 270px;
+}
+
+.img12{
+    position: absolute;
+    left: 820px;
+    top: 270px;
+}
+
+/* The CSS for the label tag gives it an absolute position and gives it a location and size.
+The same is done for the span tag */
+label{
+    position: absolute;
+    top: 415px;
+    left: 580px;
+    font-size: 30px;
+}
+
+span{
+    position: absolute;
+    top: 415px;
+    left: 660px;
+    font-size: 30px;
+}
+
+/* The CSS for the div tag with class popup has a specific height and width, has a white background, 
+an absolute position and has it hidden at the top of the screen. It is also given transitions that 
+allow it to  go from the top to the middle of the screen */
+.popup{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+/* When this class is called in the JavaScript program the popup becomes visible and comes to the 
+center of the screen */
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* The CSS below gives the button in the popup a height, width, background-colour, font-colour and size */
+.popup button{
+    width: 150px;
+    height: 50px;
+    background-color: #6fd649;
+    color: #fff;
+    font-size: 15px;
+}
