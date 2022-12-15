@@ -6,99 +6,37 @@ body{
 }
 
 /* The CSS for the div tag gives it a specific height and width, it centers it and gives it a black border */
-div{
-    height: 400px;
-    width: 800px;
+.container{
+    height: 300px;
+    width: 550px;
     border-style: solid;
     border-color: black;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
 }
 
-/* The CSS for the images make all the positions absolute nas give each image a specific location */
+/* The CSS for the images gives it a height and a width */
 img{
-    position: absolute;
     height: 120px;
     width: 85px;
-    left: 370px;
-    top: 140px;
 }
 
-.img2{
-    position: absolute;
-    left: 460px;
-}
-
-.img3{
-    position: absolute;
-    left: 550px;
-}
-
-.img4{
-    position: absolute;
-    left: 640px;
-}
-
-.img5{
-    position: absolute;
-    left: 730px;
-}
-
-.img6{
-    position: absolute;
-    left: 820px;
-}
-
-.img7{
-    position: absolute;
-    left: 370px;
-    top: 270px;
-}
-
-.img8{
-    position: absolute;
-    left: 460px;
-    top: 270px;
-}
-
-.img9{
-    position: absolute;
-    left: 550px;
-    top: 270px;
-}
-
-.img10{
-    position: absolute;
-    left: 640px;
-    top: 270px;
-}
-
-.img11{
-    position: absolute;
-    left: 730px;
-    top: 270px;
-}
-
-.img12{
-    position: absolute;
-    left: 820px;
-    top: 270px;
-}
-
-/* The CSS for the label tag gives it an absolute position and gives it a location and size.
-The same is done for the span tag */
+/* The CSS for the label and span tag sets their font size and puts them in the center */
 label{
-    position: absolute;
-    top: 415px;
-    left: 580px;
     font-size: 30px;
+    text-align: center;
+    display: block;
 }
 
 span{
-    position: absolute;
-    top: 415px;
-    left: 660px;
     font-size: 30px;
+    text-align: center;
+    display: block;
 }
 
 /* The CSS for the div tag with class popup has a specific height and width, has a white background, 
