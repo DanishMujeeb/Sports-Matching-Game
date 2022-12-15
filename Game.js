@@ -525,7 +525,7 @@ function findMatch(firstImage, secondImage) // Checks if the two images that are
         {
             if(currentlyClicked[i])
             {
-                $(imgIDs[i]).hide(); // Hides the images
+                $(imgIDs[i]).css("visibility", "hidden"); // Hides the images
                 currentlyClicked[i] = false;
                 imageCount--;
                 if(imageCount == 0)
